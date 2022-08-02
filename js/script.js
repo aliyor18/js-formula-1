@@ -1,5 +1,5 @@
 var intro = "Xush kelibsiz!";
-var hero = "Sayohatga chiqishga tayormisiz?";
+var hero = "Formula-1 da qatnashishga tayormisiz?";
 
 
 var elBody = document.querySelector("body");
