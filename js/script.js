@@ -1,5 +1,8 @@
 var intro = "Xush kelibsiz!";
 var hero = "Formula-1 da qatnashishga tayormisiz?";
+var text = "Siz Formula-1 da qatnasha olasiz!";
+var text2 = "Faqat son kiriting!";
+var text3 = "Uzr siz hali yoshsiz!";
 
 
 var elBody = document.querySelector("body");
@@ -31,10 +34,13 @@ elForm.addEventListener("submit", function(evt) {
   evt.preventDefault();
 
 if (elInput.value >= 16) {
-  elP.textContent = "Siz Formula-1 da qatnasha olasiz!"
+  console.log(text);
+  elP.textContent = text;
 } else if (isNaN(elInput.value)) {
-  elP.textContent = "Faqat son kiriting!"
+  console.log(text2);
+  elP.textContent = text2;
 } else {
-  elP.textContent = "Uzr siz hali yoshsiz!"
+  console.log(text3);
+  elP.textContent = text3;
 }
 })
